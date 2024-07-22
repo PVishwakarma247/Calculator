@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="frame">
+        <input type="text" id="display" readonly>
+
+        <div class="btns">
+            <button class="btn" onclick=clearDisplay() id="btn1">C</button>
+            <button class="btn" onclick=allClear()>AC</button>
+            <button class="btn" onclick=operator(11)>+</button>
+            <button class="btn" onclick=insert(1)>1</button>
+            <button class="btn" onclick=insert(2)>2</button>
+            <button class="btn" onclick=insert(3)>3</button>
+            <button class="btn" onclick=operator(12)>-</button>
+            <button class="btn" onclick=insert(4)>4</button>
+            <button class="btn" onclick=insert(5)>5</button>
+            <button class="btn" onclick=insert(6)>6</button>
+            <button class="btn" onclick=operator(13)>*</button>
+            <button class="btn" onclick=insert(7)>7</button>
+            <button class="btn" onclick=insert(8)>8</button>
+            <button class="btn" onclick=insert(9)>9</button>
+            <button class="btn" onclick=operator(14)>/</button>
+            <button class="btn" onclick=operator(15)>.</button>
+            <button class="btn" onclick=insert(0)>0</button>
+            <button class="btn" id="btn2" onclick=operation()>=</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
